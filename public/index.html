@@ -3,11 +3,23 @@
 <head>
 <title></title>
  <meta charset="utf-8">
+ <!-- for responsive acc to viewport -->
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <meta http-equiv="x-ua-compatible" content="ie=edge">
+
  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-auth.js"></script>
  <script src="js/config.js"></script>
  <script src="https://www.gstatic.com/firebasejs/ui/4.4.0/firebase-ui-auth.js"></script>
  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.4.0/firebase-ui-auth.css" />
+
+<!-- bootstrap cdn link-->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+ <!-- including font-awesome and bootstrap-social -->
+ <script src="https://kit.fontawesome.com/f4bc18eeb3.js" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="./css/bootstrap-social.css">
+ 
+ 
  <script src="js/app.js"></script>
 <script type="text/javascript">
       // FirebaseUI config.
@@ -45,8 +57,66 @@ console.log("yahaan tak chal gayaa12hfcngv gtrgfx");
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
+    <!-- login icon -->
+    <span class="navbar-text">
+      <a data-toggle="modal"data-target="#loginModal">
+          <span class="fa fa-sign-in"></span> Login
+      </a>
+    </span>
   </div>
 </nav>
+
+<!-- login modal -->
+<div id="loginModal" class="modal fade" role="dialog" >
+  <div class="modal-dialog modal-lg" role="content">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <!-- <h4 class="modal-title text-center w-100 font-weight-bold">Login</h4> -->
+        <h4 class="modal-title">Login</h4>
+        <button type="button" class="close" data-dismiss="modal">
+            &times;
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form">
+          <div class="form-group">
+            <label for="email">E-mail Address</label>
+            <input id="email" type="email" class="form-control" name="email" placeholder="E-mail Address"   required autofocus>
+          </div>
+          <div class="form-group">
+            <label for="password">Password
+              <a class="float-right ml-3">
+                Forgot Password?
+              </a>
+            </label>
+            <input id="password" type="password" class="form-control" name="password"  placeholder="Password" required data-eye>
+          </div>
+          <div class="form-group">
+            <div class="custom-checkbox custom-control">
+              <input type="checkbox" name="remember" id="remember" class="custom-control-input">
+              <label for="remember" class="custom-control-label">Remember Me</label>
+            </div>
+          </div>
+          <div class="form-group m-0">
+            <button type="submit" class="btn btn-primary btn-block">
+              Login
+            </button>
+          </div>
+          <div class="mt-4 text-center">
+            Don't have an account?<a href="#">Create One</a>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer d-flex justify-content-center align-items-center ml-4">
+        <a class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook fa-lg"></i></a>
+        <a class="btn btn-social-icon btn-google"><i class="fa fa-google-plus fa-lg"></i></a>
+        <a class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin fa-lg"></i></a>
+        <a class="btn btn-social-icon btn-github"><i class="fa fa-github fa-lg"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="index.php">Home</a></li>
@@ -180,7 +250,9 @@ For that we will be providing you with detailed explaination and implementation.
 <p class="p-3 bg-dark text-white text-center">@Varithms</p>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
 </body>
 </html>
