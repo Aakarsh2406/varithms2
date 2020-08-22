@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" >
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500&display=swap" rel="stylesheet">
   
 </head>
@@ -39,14 +40,14 @@
 	<li class="breadcrumb-item"><a href="contact.php">Contact</a></li>
   </ol>
 </nav>
-<div class="jumbotron">
-  <h1>Contact us</h1>
+<div class=" jumbotron">
+  <h1 class="wow flip">Contact us</h1>
   <p>All time here to help you peoples</p>
 </div
 
 <div class="container-fluid">
 <div class="row">
-<div class="col-lg-4 col-md-4 col-12">
+<div class="col-lg-4 col-md-4 col-12 wow zoomIn">
 <div class="card" style="width:300px">
   <img class="card-img-top" src="images/A1.jpeg" alt="Card image" height="300vh">
   <div class="card-body">
@@ -56,11 +57,11 @@
 </div>
 </div>
 </div>
-<div class="col-lg-4 col-md-4 col-12">
-<div class="card" style="width:300px">
+<div class="col-lg-4 col-md-4 col-12 wow zoomIn">
+<div class=" card" style="width:300px">
   <img class="card-img-top" src="images/V2.jpeg" alt="Card image">
   <div class="card-body">
-    <h4 class="card-title">Vivek Sharma</h4>
+    <h4 class=" card-title">Vivek Sharma</h4>
     <p class="card-text">vivek.sharma7354@gmail.com</p>
     <a href="https://www.linkedin.com/in/vstfiz" class="btn btn-success">Linkdin</a>
 </div>
@@ -73,7 +74,27 @@
 
 
 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js" integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg==" crossorigin="anonymous"></script>
+<script>
+var wow = new WOW(
+  {
+    boxClass:     'wow',      // animated element css class (default is wow)
+    animateClass: 'animated', // animation css class (default is animated)
+    offset:       0,          // distance to the element when triggering the animation (default is 0)
+    mobile:       true,       // trigger animations on mobile devices (default is true)
+    live:         true,       // act on asynchronously loaded content (default is true)
+    callback:     function(box) {
+      // the callback is fired every time an animation is started
+      // the argument that is passed in is the DOM node being animated
+    },
+    scrollContainer: null,    // optional scroll container selector, otherwise use window,
+    resetAnimation: true,     // reset animation on end (default is true)
+  }
+);
+wow.init();
+</script>
 
 
 
