@@ -13,12 +13,12 @@
  <script src="https://www.gstatic.com/firebasejs/ui/4.4.0/firebase-ui-auth.js"></script>
  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.4.0/firebase-ui-auth.css" 
 
-
 <!-- bootstrap cdn link-->
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
  <!-- including font-awesome and bootstrap-social -->
  <script src="https://kit.fontawesome.com/f4bc18eeb3.js" crossorigin="anonymous"></script>
  <link rel="stylesheet" href="./css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
  
  
  <script src="js/app.js"></script>
@@ -31,12 +31,20 @@ console.log("yahaan tak chal gayaa12hfcngv gtrgfx");
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" >
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@300&display=swap" rel="stylesheet">
+ <style>
+h2 {
+  background-color: white;
+  color: black;
+}
+</style>
   
 </head>
 <body>
+<div id="progressbar"></div>
+<div id="scrollPath"></div>
 <nav class="navbar navbar-expand-sm bg-secondary navbar-light">
-  <a class="navbar-brand" href="#">Varithms</a>
+  <a class="navbar-brand" href="#"><span>V</span>arithms</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -158,7 +166,7 @@ console.log("yahaan tak chal gayaa12hfcngv gtrgfx");
 </div>
 <section class="my-5">
 <div class="py-5">
-<h2 class="wow bounce text-center">About Us</h2>
+<h2 class="wow wobble text-center">About Us</h2>
 </div>
 <div class="container-fluid">
 <div class="row"> 
@@ -166,7 +174,8 @@ console.log("yahaan tak chal gayaa12hfcngv gtrgfx");
 <img src="images/pic4.jpg" class="img-fluid aboutimg wow zoomIn">
 </div>
 	<div class="col-lg-6 col-md-6 col-12 ">
-<h2 class="display-4 wow flash">I am Varithms</h2>
+	
+<h2 class="display-4 wow fadeOut"> <span>I</span> a<span>m</span> <span>V</span>arithms</h2   >
 <p class="py-3"> Welcome to Varithms , a solution to all your algorithmic problems. 
 We are here dedicated to give you the best of knowledge keeping all your placement requirements in mind.
 
@@ -187,7 +196,7 @@ For that we will be providing you with detailed explaination and implementation.
 <div class="container-fluid">
 <div class="row">
 <div class="col-lg-4 col-md-4 col-12">
-<div class="card" style="width:400px">
+<div class=" wow zoomInLeft card" style="width:400px">
   <img class="card-img-top" src="images/M1.jpg" alt="Card image">
   <div class="card-body">
     <h4 class="card-title">Mathematical Algorithms</h4>
@@ -197,7 +206,7 @@ For that we will be providing you with detailed explaination and implementation.
 </div>
 </div>
 <div class="col-lg-4 col-md-4 col-12">
-<div class="card" style="width:400px">
+<div class=" wow zoomInLeft card" style="width:400px">
   <img class="card-img-top" src="images/G1.jpg" alt="Card image">
   <div class="card-body">
     <h4 class="card-title">Geometrical Algorithms</h4>
@@ -207,7 +216,7 @@ For that we will be providing you with detailed explaination and implementation.
 </div>
 </div>
 <div class="col-lg-4 col-md-4 col-12">
-<div class="card" style="width:400px">
+<div class="wow zoomInLeft card" style="width:400px">
   <img class="card-img-top" src="images/G2.jpg" alt="Card image">
   <div class="card-body">
     <h4 class="card-title">Greedy  Algorithms</h4>
@@ -218,7 +227,7 @@ For that we will be providing you with detailed explaination and implementation.
 </div>
 </div>
 <div class="col-lg-4 col-md-4 col-12">
-<div class="card" style="width:400px">
+<div class="wow zoomInLeft card" style="width:400px">
   <img class="card-img-top" src="images/R1.jpg" alt="Card image">
   <div class="card-body">
     <h4 class="card-title">Recursive Algorithms</h4>
@@ -227,28 +236,7 @@ For that we will be providing you with detailed explaination and implementation.
 </div>
 </div>
 </div>
-<div class="w-50 m-auto">
-<form action="userinfo.php" method="post">
-<div class="form-group">
-<label>Username</label>
-<input type="text" name="user" autocomplete="off" class="form-control">
-</div>
-<div class="form-group">
-<label>Email</label>
-<input type="text" name="email" autocomplete="off" class="form-control">
-</div>
-<div class="form-group">
-<label>Mobile</label>
-<input type="text" name="mobile" autocomplete="off" class="form-control">
-</div>
-<div class="form-group">
-<label>Comments</label>
-<textarea class="form-control" name="comments">
-</textarea>
-</div>
-<button type="submit" class="btn btn-success">Submit</button>
-</form>
-</div>
+
 </section>
 
 <footer>
@@ -277,6 +265,13 @@ var wow = new WOW(
 );
 wow.init();
 </script>
-
+<script type="text/javascript">
+Let progres = document.getElementById('progressbar');
+Let totalHeight = document.body.scrollHeight - window.innerHeight;
+window.onscroll = function(){
+	Let progressHeight = (window.pageYOffset / totalHeight) * 100;
+	progress.style.height = progressHeight + "%";
+}
+</script>
 </body>
 </html>
