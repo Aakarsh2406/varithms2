@@ -1,277 +1,173 @@
-  <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Varithms</title>
- <meta charset="utf-8">
- <!-- for responsive acc to viewport -->
- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
- <meta http-equiv="x-ua-compatible" content="ie=edge">
-
- <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
- <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-auth.js"></script>
- <script src="js/config.js"></script>
- <script src="https://www.gstatic.com/firebasejs/ui/4.4.0/firebase-ui-auth.js"></script>
- <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.4.0/firebase-ui-auth.css" 
-
-<!-- bootstrap cdn link-->
- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
- <!-- including font-awesome and bootstrap-social -->
- <script src="https://kit.fontawesome.com/f4bc18eeb3.js" crossorigin="anonymous"></script>
- <link rel="stylesheet" href="./css/bootstrap-social.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
- 
- 
- <script src="js/app.js"></script>
-<script type="text/javascript">
-      // FirebaseUI config.
-console.log("yahaan tak chal gayaa12hfcngv gtrgfx");
-      
-    </script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" >
-   <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@300&display=swap" rel="stylesheet">
- <style>
-h2 {
-  background-color: white;
-  color: black;
-}
+ <title>Varithms</title>
+ <link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<style>
+    .menu.ul.parent{
+        color: white;
+    }
 </style>
+
   
+    <!-- Required meta tags -->
+    <meta charset="utf-8"></meta>
+    <meta content="width=device-width, initial-scale=1" name="viewport"></meta>
+
+    <!-- Bootstrap CSS -->
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" rel="stylesheet"></link>
+    
 </head>
 <body>
-<div id="progressbar"></div>
-<div id="scrollPath"></div>
-<nav class="navbar navbar-expand-sm bg-secondary navbar-light">
-  <a class="navbar-brand" href="#"><span>V</span>arithms</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto animated slideInDown">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="about.php">About</a>
-      </li>
-      
-  <li class="nav-item">
-        <a class="nav-link" href="contact.php">Contact</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-    <!-- login icon -->
-    <span class="navbar-text">
-      <a data-toggle="modal"data-target="#loginModal">
-          <span class="fa fa-sign-in"></span> Login
-      </a>
-    </span>
-
-  
-  
+<header class="site-header clearfix">
+ <nav>
+  <div class="logo">
+   <h1>VARITHMS</h1>
   </div>
-</nav>
+  <div class="menu"> 
+   <ul>
+    <li><a class="link" href="index.html">Home</a></li>
+    <li ><a class="link" href="about.html">About</a></li>
+    <li><a class="link" href="services.html">Services</a></li>
+   </ul>
+  </div>
+ </nav>
+ <section>
+  <div class="leftside"> 
+   <img src="images/Intro1234.jpg">
+  </div>
+  <div class="rightside"> 
+   <h1>Varithms</h1>
+   <p> Best Online Learning Platform </p>
+   <a href="signUpIn.html"><button>Login</button></a>
+  </div>
+  
+ </section>
 
-<!-- login modal -->
-<div id="loginModal" class="modal fade" role="dialog" >
-  <div class="modal-dialog modal-lg" role="content">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <!-- <h4 class="modal-title text-center w-100 font-weight-bold">Login</h4> -->
-        <h4 class="modal-title">Login</h4>
-        <button type="button" class="close" data-dismiss="modal">
-            &times;
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="form">
-          <div class="form-group">
-            <label for="email">E-mail Address</label>
-            <input id="email" type="email" class="form-control" name="email" placeholder="E-mail Address"   required autofocus>
+</header>
+<div class="service py-5">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-10 col-11 mx-auto">
+          <div class="mt-2 mb-5 text-center">
+            <h1 class="service_heading">OUR SERVICES</h1>
           </div>
-          <div class="form-group">
-            <label for="password">Password
-              <a class="float-right ml-3">
-                Forgot Password?
-              </a>
-            </label>
-            <input id="password" type="password" class="form-control" name="password"  placeholder="Password" required data-eye>
-          </div>
-          <div class="form-group">
-            <div class="custom-checkbox custom-control">
-              <input type="checkbox" name="remember" id="remember" class="custom-control-input">
-              <label for="remember" class="custom-control-label">Remember Me</label>
+          <div class="row ">
+            <!-- left side data -->
+            <div class="col-md-6 mt-md-2 m-0">
+              <span class="badge-info badge rounded-pill px-3 py-1 my-2 font-weight-light">
+                What We Do
+              </span>
+              <h4>Awesome with Extra Ordinary Flexibility Features</h4>
+              <h6 class="font-weight-light subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+              <!-- one more grid sys for services -->
+              <div class="row mt-md-5">
+                <div class="col-md-6 mt-3">
+                  <h6 class="font-weight-medium">Web Development</h6>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                </div>
+                <div class="col-md-6 mt-3">
+                  <h6 class="font-weight-medium">E-Commerce Website</h6>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                </div>
+                <div class="col-md-6 mt-3">
+                  <h6 class="font-weight-medium">Digital Marketing</h6>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                </div>
+                <div class="col-md-6 mt-3">
+                  <h6 class="font-weight-medium">App Development</h6>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                </div>
+                <div class="col-lg-12 my-4">
+                  <a class="btn btn-sm btn-info" href="#"> check More </a>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="form-group m-0">
-            <button type="submit" class="btn btn-primary btn-block">
-              Login
-            </button>
-          </div>
-          <div id="sign-in-options">
-          </div>
-          <div class="mt-4 text-center">
-            Don't have an account ?<a href="#"> Sign Up</a>
+            <!-- right side data -->
+            <div class="col-md-6 mt-md-5 m-0">
+              <div class="row wrap-service">
+                <!-- left side images -->
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-md-12 img-hover mb-4">
+                      <img alt="ux" class="rounded img-shadow img-fluid" src="images/M1.jpg" />
+                    </div>
+                    <div class="col-md-12 img-hover mb-4">
+                      <img alt="ux" class="rounded img-shadow img-fluid" src="images/G2.jpg" />
+                    </div>
+                  </div>
+                </div>
+                <!-- right side images -->
+                <div class="col-md-6 uneven-box">
+
+                  
+
+<div class="row">
+                    <div class="col-md-12 img-hover mb-4">
+                      <img alt="ux" class="rounded img-shadow img-fluid" src="images/R1.jpg" />
+                    </div>
+                    <div class="col-md-12 img-hover mb-4">
+                      <img alt="ux" class="rounded img-shadow img-fluid" src="images/G1.jpg" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="modal-footer d-flex justify-content-center align-items-center ml-4">
-        <a class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook fa-lg"></i></a>
-        <a class="btn btn-social-icon btn-google"><i class="fa fa-google-plus fa-lg"></i></a>
-        <a class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin fa-lg"></i></a>
-        <a class="btn btn-social-icon btn-github"><i class="fa fa-github fa-lg"></i></a>
-      </div>
     </div>
   </div>
-</div>
+    <!-- Site footer -->
+    <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6>About</h6>
+              <p class="text-justify">Varithms <i> WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the Algorithms. Varithms focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different algorithm.</p>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Categories</h6>
+              <ul class="footer-links">
+                <li><a href="#">C</a></li>
+                <li><a href="#">UI Design</a></li>
+                <li><a href="#">PHP</a></li>
+                <li><a href="#">Java</a></li>
+                <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+                <li><a href="#">Templates</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact1.html">Contact Us</a></li>
+      
+        
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+       
+  
+            
+          </div>
+        </div>
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- Popper.js first, then Bootstrap JS -->
+  <script crossorigin="anonymous" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script crossorigin="anonymous" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
 
 
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-    <li class="breadcrumb-item"><a href="about.php">About</a></li>
-	<li class="breadcrumb-item"><a href="contact.php">Contact</a></li>
-  </ol>
-</nav>
-
-<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="images/E6.jpg" class="d-block w-100" alt="Learn Online">
-    </div>
-    <div class="carousel-item">
-      <img src="images/E2.jpg" class="d-block w-100" alt="Hurraah">
-    </div>
-    <div class="carousel-item">
-      <img src="images/E3.jpg" class="d-block w-100" alt="WElcome Sir">
-    </div>
-	 <div class="carousel-item">
-      <img src="images/E5.jpg" class="d-block w-100" alt="WElcome Sir">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-<section class="my-5">
-<div class="py-5">
-<h2 class="wow wobble text-center">About Us</h2>
-</div>
-<div class="container-fluid">
-<div class="row"> 
-	<div class="col-lg-6 col-md-6 col-12 ">
-<img src="images/pic4.jpg" class="img-fluid aboutimg wow zoomIn">
-</div>
-	<div class="col-lg-6 col-md-6 col-12 ">
-	
-<h2 class="display-4 wow fadeOut"> <span>I</span> a<span>m</span> <span>V</span>arithms</h2   >
-<p class="py-3"> Welcome to Varithms , a solution to all your algorithmic problems. 
-We are here dedicated to give you the best of knowledge keeping all your placement requirements in mind.
-
-Our main concern here is to make things a lot simpler to you. 
-Minimizing your struggle while understanding them.
-
-We're here to provide you with simpler techniques to understand particular algorithm and to implement it.
-For that we will be providing you with detailed explaination and implementation.</p>
-<a href="about.php" class="btn btn-success"> Know more </a>
-</div>
-</div>
-</div>
-</section>
-<section class="my-5">
-<div class="py-5">
-<h2 class="text-center">Our Services</h2>
-</div>
-<div class="container-fluid">
-<div class="row">
-<div class="col-lg-4 col-md-4 col-12">
-<div class=" wow zoomInLeft card" style="width:400px">
-  <img class="card-img-top" src="images/M1.jpg" alt="Card image">
-  <div class="card-body">
-    <h4 class="card-title">Mathematical Algorithms</h4>
-    <p class="card-text">Finest  Mathematical Algorithms.</p>
-    <button id="OPBT" class="btn btn-primary">See more</a>
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-md-4 col-12">
-<div class=" wow zoomInLeft card" style="width:400px">
-  <img class="card-img-top" src="images/G1.jpg" alt="Card image">
-  <div class="card-body">
-    <h4 class="card-title">Geometrical Algorithms</h4>
-    <p class="card-text">Finest  Geometrical Algorithms.</p>
-    <a href="#" class="btn btn-primary">See more</a>
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-md-4 col-12">
-<div class="wow zoomInLeft card" style="width:400px">
-  <img class="card-img-top" src="images/G2.jpg" alt="Card image">
-  <div class="card-body">
-    <h4 class="card-title">Greedy  Algorithms</h4>
-    <p class="card-text">Finest  Greedy Algorithms.</p>
-    <a href="#" class="btn btn-primary">See more</a>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-md-4 col-12">
-<div class="wow zoomInLeft card" style="width:400px">
-  <img class="card-img-top" src="images/R1.jpg" alt="Card image">
-  <div class="card-body">
-    <h4 class="card-title">Recursive Algorithms</h4>
-    <p class="card-text">Finest  Recursive Algorithms.</p>
-    <a href="#" class="btn btn-primary">See more</a>
-</div>
-</div>
-</div>
-
-</section>
-
-<footer>
-<p class="p-3 bg-dark text-white text-center">@Varithms</p>
-</footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js" integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg==" crossorigin="anonymous"></script>
-<script>
-var wow = new WOW(
-  {
-    boxClass:     'wow',      // animated element css class (default is wow)
-    animateClass: 'animated', // animation css class (default is animated)
-    offset:       0,          // distance to the element when triggering the animation (default is 0)
-    mobile:       true,       // trigger animations on mobile devices (default is true)
-    live:         true,       // act on asynchronously loaded content (default is true)
-    callback:     function(box) {
-      // the callback is fired every time an animation is started
-      // the argument that is passed in is the DOM node being animated
-    },
-    scrollContainer: null,    // optional scroll container selector, otherwise use window,
-    resetAnimation: true,     // reset animation on end (default is true)
-  }
-);
-wow.init();
-</script>
-<script type="text/javascript">
-Let progres = document.getElementById('progressbar');
-Let totalHeight = document.body.scrollHeight - window.innerHeight;
-window.onscroll = function(){
-	Let progressHeight = (window.pageYOffset / totalHeight) * 100;
-	progress.style.height = progressHeight + "%";
-}
-</script>
 </body>
 </html>
+
+
+
+
